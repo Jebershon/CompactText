@@ -26,7 +26,7 @@
     "@types/big.js": "^6.0.2"
   },
   "dependencies": {
-
+    "compacttext": "file:"
   },
   "resolutions": {
     "react": "^18.2.0",

@@ -11,6 +11,6 @@ export interface CustomStyle extends Style {
     label: TextStyle;
 }
 
-export function CompactText({ style, yourName }: CompactTextProps<CustomStyle>): ReactElement {
-    return <HelloWorld name={yourName} style={style} />;
+export function CompactText({ style, Text ,Size,BackgroundColor,FontColor,mC}: CompactTextProps<CustomStyle>): ReactElement {
+    return <HelloWorld style={style} content={Text.value ?? ""} size={Size} BackgroundColor={BackgroundColor} FontColor={FontColor} mC={mC}/>;
 }

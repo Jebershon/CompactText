@@ -8,9 +8,25 @@
     <icon/>
     <properties>
         <propertyGroup caption="General">
-            <property key="yourName" type="string" required="false">
-                <caption>Name</caption>
-                <description>Enter your name</description>
+            <property key="Size" type="integer" required="true" defaultValue="100">
+                <caption>Size</caption>
+                <description>Enter size of the text(Number of texts)</description>
+            </property>
+            <property key="Text" type="textTemplate" required="true">
+                <caption>Text</caption>
+                <description>Enter the Text</description>
+            </property>
+            <property key="BackgroundColor" type="string" required="false">
+                <caption>Background Color</caption>
+                <description>Select the background color - code</description>
+            </property>
+            <property key="mC" type="string" required="false">
+                <caption>more Color</caption>
+                <description>Select the more-button color - code</description>
+            </property>
+            <property key="FontColor" type="string" required="false">
+                <caption>Font Color</caption>
+                <description>Select the font color - code</description>
             </property>
         </propertyGroup>
     </properties>

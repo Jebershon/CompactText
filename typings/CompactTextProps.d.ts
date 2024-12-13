@@ -4,11 +4,16 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { DynamicValue } from "mendix";
 
 export interface CompactTextProps<Style> {
     name: string;
     style: Style[];
-    yourName: string;
+    Size: number;
+    Text: DynamicValue<string>;
+    BackgroundColor: string;
+    mC: string;
+    FontColor: string;
 }
 
 export interface CompactTextPreviewProps {
@@ -21,5 +26,9 @@ export interface CompactTextPreviewProps {
     styleObject?: CSSProperties;
     readOnly: boolean;
     renderMode?: "design" | "xray" | "structure";
-    yourName: string;
+    Size: number | null;
+    Text: string;
+    BackgroundColor: string;
+    mC: string;
+    FontColor: string;
 }

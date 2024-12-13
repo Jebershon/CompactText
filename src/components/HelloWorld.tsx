@@ -1,27 +1,35 @@
 import { ReactElement, createElement } from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 
 import { mergeNativeStyles } from "@mendix/pluggable-widgets-tools";
 
 import { CustomStyle } from "../CompactText";
 
+import FunctionText from "./FunctionText";
 export interface HelloWorldProps {
-    name?: string;
+    size: number;
+    content: string;
     style: CustomStyle[];
+    BackgroundColor: string;
+    FontColor: string;
+    mC: string;
 }
-
-const defaultStyle: CustomStyle = {
-    container: {},
-    label: {
-        color: "#F6BB42"
-    }
-};
-
-export function HelloWorld({ name, style }: HelloWorldProps): ReactElement {
+export function HelloWorld({ style , content , size,BackgroundColor,FontColor,mC}: HelloWorldProps): ReactElement {
+    const defaultStyle: CustomStyle = {
+        container: {
+            backgroundColor: BackgroundColor,
+            borderRadius: 10,
+            padding: 10,
+            margin: 10,
+        },
+        label: {
+            color: FontColor,
+        }
+    };
     const styles = mergeNativeStyles(defaultStyle, style);
     return (
         <View style={styles.container}>
-            <Text style={styles.label}>Hello {name || "World"}</Text>
+            <FunctionText text={content} limit={size} more={mC} color={FontColor}/>
         </View>
     );
 }
