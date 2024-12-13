@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="rapiddata.compacttext.CompactText" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Compact Text</name>
+    <description>A Mendix native widget to display large text in a truncated format with a customizable character limit. Includes a "More" button to expand and view the full content and a "Less" button to collapse it back.</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="yourName" type="string" required="false">
+                <caption>Name</caption>
+                <description>Enter your name</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

@@ -1,0 +1,41 @@
+{
+  "name": "compacttext",
+  "widgetName": "CompactText",
+  "version": "1.0.0",
+  "description": "A Mendix native widget to display large text in a truncated format with a customizable character limit. Includes a \"More\" button to expand and view the full content and a \"Less\" button to collapse it back.",
+  "copyright": "Jebershon 2024.",
+  "author": "Jebershon",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "Apache-2.0",
+  "config": {
+    "projectPath": "./tests/testProject"
+  },
+  "packagePath": "rapiddata",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:native",
+    "build": "pluggable-widgets-tools build:native",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:native"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^10.7.1",
+    "@types/big.js": "^6.0.2"
+  },
+  "dependencies": {
+
+  },
+  "resolutions": {
+    "react": "^18.2.0",
+    "@types/react": "^18.2.0",
+    "react-native": "0.72.7"
+  },
+  "overrides": {
+    "react": "^18.2.0",
+    "@types/react": "^18.2.0",
+    "react-native": "0.72.7"
+  }
+}
